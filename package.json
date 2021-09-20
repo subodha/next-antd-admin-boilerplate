@@ -19,18 +19,6 @@
     "-------------------------------- PROD ----": "----",
     "build": "next build"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "post-commit": "git update-index --again"
-    }
-  },
-  "lint-staged": {
-    "**/*.{js,ts,tsx,css,less,json}": [
-      "yarn format",
-      "git add"
-    ]
-  },
   "dependencies": {
     "add": "^2.0.6",
     "antd": "^4.16.13",
@@ -45,11 +33,13 @@
     "yarn": "^1.22.11"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^13.1.0",
     "@types/react": "17.0.21",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
     "babel-plugin-import": "^1.13.3",
     "babel-plugin-module-resolver": "^4.1.0",
+    "commitlint": "^13.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -68,6 +58,7 @@
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "prettier": "^2.4.1",
+    "pretty-quick": "^3.1.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "typescript": "4.4.3"
