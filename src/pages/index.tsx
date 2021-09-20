@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-import React from 'react';
+import React from 'react'
 import { Button } from 'antd';
 
 const Home: NextPage = () => {
