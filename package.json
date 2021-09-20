@@ -19,6 +19,18 @@
     "-------------------------------- PROD ----": "----",
     "build": "next build"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "post-commit": "git update-index --again"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,css,json}": [
+      "yarn format",
+      "git add"
+    ]
+  },
   "dependencies": {
     "add": "^2.0.6",
     "antd": "^4.16.13",
