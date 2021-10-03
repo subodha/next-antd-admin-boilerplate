@@ -1,3 +1,3 @@
-import cx from 'classnames';
-import React from 'react';
-import Link from 'next/link';
+/* eslint-disable max-len, import/prefer-default-export */
+export { MasterLayout } from './MasterLayout/MasterLayout';
+export { DefaultLayout } from './Default/Default';
