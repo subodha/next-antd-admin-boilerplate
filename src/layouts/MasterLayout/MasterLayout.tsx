@@ -7,6 +7,7 @@ import {
   SettingOutlined,
 } from '@ant-design/icons';
 import { FooterNav, HeaderNavbar } from '@/components';
+import { useDarkMode } from '@/hooks';
 import { ILayoutBaseProps } from '@/interfaces/jsx.interface';
 
 import styles from './styles.module.less';

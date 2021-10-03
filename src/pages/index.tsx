@@ -3,8 +3,6 @@ import type { NextPage } from 'next';
 import Link from 'next/link';
 import { Button } from 'antd';
 
-const test = 'test';
-
 const Home: NextPage = () => {
   return (
     <div>
